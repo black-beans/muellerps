@@ -1,13 +1,19 @@
 ---
 layout: 'default'
 title: 'Brandschutz'
+classes:
+  -
+    name: "Sicherheit für Anlässe"
+    partial: "sicherheit-fuer-anlaesse"
 ---
 
 <h1>Brandschutz</h1>
+
 <p>
   Es ist notwendig, sich der Gefahren bewusst zu werden und aktiv Massnahmen zu ergreifen, damit keine Brände entstehen
   können und somit Ihre Mitarbeiter und Gäste nicht in Gefahr geraten, sowie die Umwelt geschont wird.
 </p>
+
 <div class="row panel">
   <div class="large-3 columns">
     <%= image_tag('checklist.png') %>
@@ -21,11 +27,14 @@ title: 'Brandschutz'
     </ul>
   </div>
 </div>
+
 <p>
   Die finanziellen Auswirkungen, die ein Brand nach sich ziehen kann, sind immens: Betriebsausfall, Neubau, Renovation,
   Haftung gegenüber Dritten, etc.
 </p>
+
 <h2>Brandschutzkonzept</h2>
+
 <ul>
   <li>Ein Brandschutzkonzept regelt in Ihrem Betrieb:</li>
   <li>Brandschutzkurse mit Brandschutzreferat und Feuerlöscherhandhabung</li>
@@ -40,3 +49,18 @@ title: 'Brandschutz'
   <li>die Schulung der Mitarbeitenden</li>
   <li>Wartung und Unterhalt der Infrastruktur</li>
 </ul>
+
+<h2>Spezielle Dienstleistungen</h2>
+
+<div class="section-container accordion" data-section="accordion">
+  <% current_page.data.classes.each do |clazz| %>
+      <section>
+        <p class="title" data-section-title>
+          <%= link_to clazz.name, "##{ clazz.partial }"%>
+        </p>
+        <div class="content" data-section-content>
+          <%= partial "brandschutz/#{ clazz.partial }" %>
+        </div>
+      </section>
+  <% end %>
+</div>
