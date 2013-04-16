@@ -1,6 +1,16 @@
 ---
 layout: 'default'
 title: 'Schulungen'
+classes:
+  -
+    name: "Schulungen Arbeitssicherheit"
+    partial: "schulungen-arbeitssicherheit"
+  -
+    name: "Schulungen Brandschutz"
+    partial: "schulungen-brandschutz"
+  -
+    name: "Höhere Fachschulen"
+    partial: "hoehere-fachschulen"
 ---
 
 <h1>Schulungen</h1>
@@ -49,61 +59,16 @@ title: 'Schulungen'
 <h2>Unser Angebot</h2>
 
 <div class="section-container accordion" data-section="accordion">
-  <section>
-    <p class="title" data-section-title>
-      Schulungen Arbeitssicherheit
-    </p>
-
-    <div class="content" data-section-content>
-      <p>
-        MPS führt offiziell anerkannte Arbeitssicherheitsschulungen für die SUVA durch!
-      </p>
-
-      <p>
-        Die SUVA steht im Bereich Arbeitssicherheit für Kontinuität und Qualität. Die Firma MPS führt unter dem
-        Qualitätslabel dieser renommierten Versicherung offiziell Schulungen im Bereich Arbeitssicherheit und
-        Brandschutz durch, wie z.B. SIBE Kurse, Brandschutzkurse, Arbeitssichhrheitskurse
-      </p>
-    </div>
-  </section>
-  <section>
-    <p class="title" data-section-title>
-      Schulungen Brandschutz
-    </p>
-
-    <div class="content" data-section-content>
-      <p>
-        Wie wäre es zum Beispiel mit einem Brandschutzreferat für Ihre Firma, Ihren Verein, Verwaltung etc.?
-      </p>
-
-      <p>
-        Unsere Brandschutzreferate sind auf Ihre Zielgruppe ausgerichtet. Einhaltung der gesetzlichen Verpflichtung zur
-        Weiter- und Ausbildung Ihres Personales zu dem Thema Brandschutz sind ein wesentlicher Bestandteil der
-        Brandschutzschulungen. Dies kann natürlich sehr gut mit dem praktischen Teil eines Brandschutzkurses kombiniert
-        werden.
-      </p>
-    </div>
-  </section>
-  <section>
-    <p class="title" data-section-title>
-      Höhere Fachschulen
-    </p>
-
-    <div class="content" data-section-content>
-      <p>
-        Verschiedene Mitarbeiter (inkl. freie Mitarbeiter) dozieren an diversen höheren Fachschulen und Kaderschulen in
-        den Fachbereichen:
-      </p>
-
-      <ul>
-        <li>Arbeitssicherheit</li>
-        <li>Brandschutz</li>
-        <li>Angewandtes Projektmanagement</li>
-        <li>Arbeitsmethodik / -systematik</li>
-        <li>Prozesse & Arbeitssysteme</li>
-      </ul>
-    </div>
-  </section>
+  <% current_page.data.classes.each do |clazz| %>
+      <section>
+        <p class="title" data-section-title>
+          <%= link_to clazz.name, "##{ clazz.partial }"%>
+        </p>
+        <div class="content" data-section-content>
+          <%= partial "schulungen/#{ clazz.partial }" %>
+        </div>
+      </section>
+  <% end %>
 </div>
 
 <p>
