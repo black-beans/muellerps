@@ -1,0 +1,177 @@
+<% wrap_layout :layout do %>
+
+    <div class="row">
+      <div class="large-12 columns">
+
+        <!-- Desktop Slider -->
+
+        <div class="hide-for-small">
+          <div id="featured" data-orbit>
+            <%= image_tag('slideshow/evakuation.jpg') %>
+            <%= image_tag('slideshow/notfall.jpg') %>
+            <%= image_tag('slideshow/brandschutz.jpg') %>
+          </div>
+        </div>
+
+        <!-- End Desktop Slider -->
+
+
+        <!-- Mobile Header -->
+
+
+        <div class="row">
+          <div class="small-12 show-for-small"><br>
+            <%= image_tag('slideshow/mobile/evakuation.jpg') %>
+          </div>
+        </div>
+
+
+        <!-- End Mobile Header -->
+
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="row">
+
+          <!-- Thumbnails -->
+
+          <% link_to '/notfallmanagement.html' do %>
+              <div class="large-3 small-6 columns">
+                <%= image_tag('symbole/notfallmanagement.png') %>
+                <h6 align="center">Notfallmanagement</h6>
+              </div>
+          <% end %>
+
+          <% link_to '/arbeitssicherheit.html' do %>
+              <div class="large-3 small-6 columns">
+                <%= image_tag('symbole/arbeitssicherheit.png') %>
+                <h6 align="center">Arbeitssicherheit</h6>
+              </div>
+          <% end %>
+
+          <% link_to '/brandschutz.html' do %>
+              <div class="large-3 small-6 columns">
+                <%= image_tag('symbole/brandschutz.png') %>
+                <h6 align="center">Brandschutz</h6>
+              </div>
+          <% end %>
+
+          <% link_to '/schulungen.html' do %>
+              <div class="large-3 small-6 columns">
+                <%= image_tag('symbole/schulungen.png') %>
+                <h6 align="center">Schulungen</h6>
+              </div>
+          <% end %>
+
+          <!-- End Thumbnails -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns" role="content">
+        <article>
+          <%= yield %>
+        </article>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="row">
+
+          <!-- Content -->
+
+          <div class="large-8 columns">
+            <div class="panel radius">
+
+              <div class="row">
+                <div class="large-12 small-12 columns">
+
+                  <h4>MPS Müller Projects &amp; Services GmbH</h4>
+                  <hr/>
+
+                  <h5 class="subheader">
+                    Wir sind ein Unternehmen, das sich seit 2002 auf Notfallmanagement, Arbeitssicherheit, Brandschutz
+                    und Schulungen spezialisiert hat.
+                  </h5>
+
+                  <div class="show-for-small" align="center">
+                    <%= link_to 'Offizielle SUVA Kurse', '/kurse.html', class: 'small radius button' %>
+                    <%= link_to 'Kontaktieren Sie uns', '/kontakt.html', class: 'small radius button' %>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="large-4 columns hide-for-small">
+
+            <% link_to '/kurse.html' do %>
+                <div class="panel radius callout" align="center">
+                  <strong>Offizielle SUVA Kurse</strong>
+                </div>
+            <% end %>
+
+            <% link_to '/kontakt.html' do %>
+                <div class="panel radius callout" align="center">
+                  <strong>Kontaktieren Sie uns</strong>
+                </div>
+            <% end %>
+
+          </div>
+
+          <!-- End Content -->
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="row">
+
+          <!-- Thumbnails -->
+
+          <% link_to '/downloads.html' do %>
+              <div class="large-3 small-6 columns">
+                <%= image_tag('symbole/downloads.png') %>
+                <h6 align="center">Downloads</h6>
+              </div>
+          <% end %>
+
+          <% link_to '/partner.html' do %>
+              <div class="large-3 small-6 columns">
+                <%= image_tag('symbole/partner.png') %>
+                <h6 align="center">Partner</h6>
+              </div>
+          <% end %>
+
+          <% link_to '/referenzen.html' do %>
+              <div class="large-3 small-6 columns">
+                <%= image_tag('symbole/referenzen.png') %>
+                <h6 align="center">Referenzen</h6>
+              </div>
+          <% end %>
+
+          <% link_to '/kurse.html' do %>
+              <div class="large-3 small-6 columns">
+                <%= image_tag('symbole/kurse.png') %>
+                <h6 align="center">Kurse</h6>
+              </div>
+          <% end %>
+
+          <!-- End Thumbnails -->
+
+        </div>
+      </div>
+    </div>
+
+<% end %>

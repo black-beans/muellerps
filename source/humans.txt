@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Roman Müller -- Geschäftsführer
+    Anita Müller -- Administration
+
+# THANKS
+
+    Roman Müller
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Foundation, jQuery, Modernizr
+
+    Michael Kessler -- Softwareentwicklung

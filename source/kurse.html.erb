@@ -1,0 +1,67 @@
+---
+layout: 'default'
+title: 'Kurse'
+---
+
+<h1>Kurse</h1>
+
+<p>
+  Bitte beachten Sie auch die <%= link_to 'allgemeinen Geschäftsbedingungen', '/kurse/agb.html' %> des MPS Müller
+  Projects & Services GmbH Kurswesens.
+</p>
+
+<div class="section-container accordion" data-section="accordion">
+  <section>
+    <p class="title" data-section-title>
+      <a href="#arbeitssicherheit-und-gesundheitsschutz">Grundwissen Arbeitssicherheit & Gesundheitsschutz SIBE</a>
+    </p>
+    <div class="content" data-section-content>
+      <%= partial 'kurse/arbeitssicherheit' %>
+    </div>
+  </section>
+  <section>
+    <p class="title" data-section-title>
+      <a href="#brandschutzreferat">Brandschutzreferat</a>
+    </p>
+    <div class="content" data-section-content>
+      <%= partial 'kurse/brandschutzreferat' %>
+    </div>
+  </section>
+  <section>
+    <p class="title" data-section-title>
+      <a href="#arbeitssicherheit-als-fuehrungskompetenz">Arbeitssicherheit als Führungskompetenz</a>
+    </p>
+    <div class="content" data-section-content>
+      <%= partial 'kurse/arbeitssicherheit-als-fuehrungskompetenz' %>
+    </div>
+  </section>
+  <section>
+    <p class="title" data-section-title>
+      <a href="#Individuelle-kurse">Individuelle Kurse</a>
+    </p>
+    <div class="content" data-section-content>
+      <%= partial 'kurse/individuelle-kurse' %>
+    </div>
+  </section>
+</div>
+
+<p>
+  Laden Sie den <%= link_to 'Flyer zu den MPS Kursen', '/documents/MPS-Kurse.pdf' %> herunter.
+</p>
+
+<div class="row">
+  <div class="large-6 columns">
+    <a href="#" data-reveal-id="course">
+      <div class="panel radius callout" align="center">
+        <strong>Kurs buchen</strong>
+      </div>
+    </a>
+  </div>
+  <div class="large-6 columns">
+    <% link_to '/kontakt.html' do %>
+      <div class="panel radius callout" align="center">
+        <strong>Persönliche Beratung</strong>
+      </div>
+    <% end %>
+  </div>
+</div>
