@@ -43,19 +43,21 @@
               <% end %>
             </div>
         <% end %>
-        <div>
-          <h5>Downloads</h5>
+        <% if data.page.title != 'Downloads' %>
+            <div>
+              <h5>Downloads</h5>
 
-          <p>
-            Publizierte Fachartikel, Richtlinien und die Firmenpräsentation können Sie von unserem Download-Bereich
-            herunterladen.
-          </p>
-          <% link_to '/download.html' do %>
-              <div class="panel radius callout" align="center">
-                <strong>Zum Download-Bereich</strong>
-              </div>
-          <% end %>
-        </div>
+              <p>
+                Publizierte Fachartikel, Richtlinien und die Firmenpräsentation können Sie von unserem Download-Bereich
+                herunterladen.
+              </p>
+              <% link_to '/downloads.html' do %>
+                  <div class="panel radius callout" align="center">
+                    <strong>Zum Download-Bereich</strong>
+                  </div>
+              <% end %>
+            </div>
+        <% end %>
       </aside>
     </div>
 <% end %>
