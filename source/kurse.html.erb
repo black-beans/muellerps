@@ -1,6 +1,19 @@
 ---
 layout: 'default'
 title: 'Kurse'
+courses:
+  -
+    name: "Grundwissen Arbeitssicherheit & Gesundheitsschutz SIBE"
+    partial: "arbeitssicherheit"
+  -
+    name: "Brandschutzreferat"
+    partial: "brandschutzreferat"
+  -
+    name: "Arbeitssicherheit als Führungskompetenz"
+    partial: "arbeitssicherheit-als-fuehrungskompetenz"
+  -
+    name: "Individuelle Kurse"
+    partial: "individuelle-kurse"
 ---
 
 <h1>Kurse</h1>
@@ -11,38 +24,16 @@ title: 'Kurse'
 </p>
 
 <div class="section-container accordion" data-section="accordion">
+  <% current_page.data.courses.each do |course| %>
   <section>
     <p class="title" data-section-title>
-      <a href="#arbeitssicherheit-und-gesundheitsschutz">Grundwissen Arbeitssicherheit & Gesundheitsschutz SIBE</a>
+      <%= link_to course.name, "##{ course.partial }"%>
     </p>
     <div class="content" data-section-content>
-      <%= partial 'kurse/arbeitssicherheit' %>
+      <%= partial "kurse/#{ course.partial }" %>
     </div>
   </section>
-  <section>
-    <p class="title" data-section-title>
-      <a href="#brandschutzreferat">Brandschutzreferat</a>
-    </p>
-    <div class="content" data-section-content>
-      <%= partial 'kurse/brandschutzreferat' %>
-    </div>
-  </section>
-  <section>
-    <p class="title" data-section-title>
-      <a href="#arbeitssicherheit-als-fuehrungskompetenz">Arbeitssicherheit als Führungskompetenz</a>
-    </p>
-    <div class="content" data-section-content>
-      <%= partial 'kurse/arbeitssicherheit-als-fuehrungskompetenz' %>
-    </div>
-  </section>
-  <section>
-    <p class="title" data-section-title>
-      <a href="#Individuelle-kurse">Individuelle Kurse</a>
-    </p>
-    <div class="content" data-section-content>
-      <%= partial 'kurse/individuelle-kurse' %>
-    </div>
-  </section>
+  <% end %>
 </div>
 
 <p>
