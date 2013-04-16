@@ -1,14 +1,23 @@
 ---
 layout: 'default'
 title: 'Arbeitssicherheit'
+classes:
+  -
+    name: "Sicherheitsaudits & Massnahmenplanung"
+    partial: "gefaehrdungsermittlung-und-risikobeurteilung"
+  -
+    name: "Gefährdungsermittlung & Risikobeurteilung"
+    partial: "gefaehrdungsermittlung-und-risikobeurteilung"
 ---
 
 <h1>Arbeitssicherheit</h1>
+
 <p>
   MPS Müller Projects & Services GmbH ist Ihr kompetenter Partner für den Bereich Arbeitssicherheit. Gerne erläutern
   wir Ihnen individuell, was für Ihren Betrieb das Beste wäre. Mit wenig Aufwand sind Ihre grössten Risiken im Bereich
   Arbeitssicherheit zu definieren und in den Griff zu bekommen.
 </p>
+
 <div class="row panel">
   <div class="large-3 columns">
     <%= image_tag('checklist.png') %>
@@ -22,7 +31,9 @@ title: 'Arbeitssicherheit'
     </ul>
   </div>
 </div>
+
 <h2>Ihre Vorteile</h2>
+
 <ul>
   <li>Sie wissen, wo Ihre Risiken liegen und können entsprechende Massnahmen planen.</li>
   <li>Umsetzung der EKAS Richtlinie 6508, Beizug von Arbeitssicherheits-Spezialisten</li>
@@ -32,10 +43,13 @@ title: 'Arbeitssicherheit'
   <li>Begleitung von Behördenaudits: Arbeitsinpektorat, Feuerpolizei, SUVA</li>
   <li>Einführung von Sicherheitskonzepten nach EKAS oder individuell</li>
 </ul>
+
 <p>
   <%= image_tag('arbeitssicherheit.png') %>
 </p>
+
 <h2>Wer muss ein Arbeitssicherheitssystem umsetzen?</h2>
+
 <p>
   Die Bestimmungen der Verordnung über die Verhütung von Unfällen und Berufskrankheiten (VUV) gelten grundsätzlich
   für sämtliche Betriebe, die in der Schweiz Arbeitnehmende beschäftigen. Dies gilt auch für die Bestimmungen über
@@ -44,3 +58,18 @@ title: 'Arbeitssicherheit'
   Diese Richtlinie der EKAS 6508 konkretisiert die Beizugspflicht, sie verändert den Geltungsbereich der VUV
   nicht.
 </p>
+
+<h2>Unser Angebot</h2>
+
+<div class="section-container accordion" data-section="accordion">
+  <% current_page.data.classes.each do |clazz| %>
+      <section>
+        <p class="title" data-section-title>
+          <%= link_to clazz.name, "##{ clazz.partial }"%>
+        </p>
+        <div class="content" data-section-content>
+          <%= partial "arbeitssicherheit/#{ clazz.partial }" %>
+        </div>
+      </section>
+  <% end %>
+</div>
