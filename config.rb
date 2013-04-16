@@ -1,5 +1,10 @@
 require 'middleman-smusher'
 
+require 'zurb-foundation'
+require 'sprockets'
+
+::Sprockets.append_path File.join(Gem::Specification.find_by_name('zurb-foundation').gem_dir, 'js')
+
 ###
 # Compass
 ###
@@ -30,6 +35,9 @@ require 'middleman-smusher'
 #   page "/admin/*"
 # end
 
+page 'robots.txt', layout: false
+page 'humans.txt', layout: false
+
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
 #   @which_fake_page = "Rendering a fake page with a variable"
@@ -57,6 +65,7 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+
   activate :livereload
 
   # For example, change the Compass output style for deployment
