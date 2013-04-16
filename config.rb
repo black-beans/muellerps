@@ -77,4 +77,5 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
   activate :directory_indexes
+  activate :gzip
 end
