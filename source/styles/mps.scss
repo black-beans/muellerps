@@ -114,8 +114,11 @@ div[role=content] {
 }
 
 table {
-  width: 100%;
   font-size: 1.2em;
+}
+
+table.downloads {
+  width: 100%;
 }
 
 aside {
