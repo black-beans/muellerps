@@ -6,58 +6,54 @@
         </article>
       </div>
       <aside class="large-3 columns">
-        <div>
-          <h5>MPS Müller Projects &amp; Services GmbH</h5>
+        <h5>Müller Projects &amp; Services</h5>
 
-          <p>
-            Wir sind ein Unternehmen, das sich seit 2002 auf Notfallmanagement, Arbeitssicherheit, Brandschutz
-            und Schulungen spezialisiert hat. Erfahren Sie mehr <%= link_to 'über uns', '/kontakt.html' %>, unsere
-            <%= link_to 'Partner', '/partner.html' %> und <%= link_to 'Referenzen', '/referenzen.html' %>.
-          </p>
-        </div>
+        <p>
+          Wir sind ein Unternehmen, das sich seit 2002 auf Notfallmanagement, Arbeitssicherheit, Brandschutz
+          und Schulungen spezialisiert hat. Erfahren Sie mehr <%= link_to 'über uns', '/kontakt.html' %>, unsere
+          <%= link_to 'Partner', '/partner.html' %> und <%= link_to 'Referenzen', '/referenzen.html' %>.
+        </p>
         <% if data.page.title != 'Kurse' %>
-            <div>
-              <h5>Kurse</h5>
+            <hr/>
+            <h5>Kurse</h5>
 
-              <p>
-                MPS ist Anbieter offizieller SUVA Kurse.
-              </p>
-              <% link_to '/kurse.html' do %>
-                  <div class="panel radius callout" align="center">
-                    <strong>Kursangebot</strong>
-                  </div>
-              <% end %>
-            </div>
+            <p>
+              MPS ist Anbieter offizieller SUVA Kurse.
+            </p>
+            <% link_to '/kurse.html' do %>
+                <div class="panel radius callout" align="center">
+                  <p>Zum Kursangebot</p>
+                </div>
+            <% end %>
         <% end %>
         <% if data.page.title != 'Kontakt' && data.page.title != 'Kurse' %>
-            <div>
-              <h5>Kontakt</h5>
+            <hr/>
+            <h5>Kontakt</h5>
 
-              <p>
-                Kontaktieren Sie uns für eine persönliche Beratung.
-              </p>
-              <% link_to '/kontakt.html' do %>
-                  <div class="panel radius callout" align="center">
-                    <strong>Kontaktieren Sie uns</strong>
-                  </div>
-              <% end %>
-            </div>
+            <p>
+              Kontaktieren Sie uns für eine persönliche Beratung.
+            </p>
+            <% link_to '/kontakt.html' do %>
+                <div class="panel radius callout" align="center">
+                  <p>Kontaktieren Sie uns</p>
+                </div>
+            <% end %>
         <% end %>
         <% if data.page.title != 'Downloads' %>
-            <div>
-              <h5>Downloads</h5>
+            <hr/>
+            <h5>Downloads</h5>
 
-              <p>
-                Publizierte Fachartikel, Richtlinien und die Firmenpräsentation können Sie von unserem Download-Bereich
-                herunterladen.
-              </p>
-              <% link_to '/downloads.html' do %>
-                  <div class="panel radius callout" align="center">
-                    <strong>Zum Download-Bereich</strong>
-                  </div>
-              <% end %>
-            </div>
+            <p>
+              Publizierte Fachartikel, Richtlinien und die Firmenpräsentation können Sie von unserem Download-Bereich
+              herunterladen.
+            </p>
+            <% link_to '/downloads.html' do %>
+                <div class="panel radius callout" align="center">
+                  <p>Zum Download-Bereich</p>
+                </div>
+            <% end %>
         <% end %>
+        <hr/>
       </aside>
     </div>
 <% end %>

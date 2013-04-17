@@ -19,6 +19,10 @@ img.logo {
 
   padding-right: 10px;
 
+  ul {
+    margin-left: 0;
+  }
+
   .name h1 {
     letter-spacing: 2px;
     font-style: italic;
@@ -41,6 +45,35 @@ h1, h2, h3, h4, h5, h6 {
   color: #002F60;
 }
 
+ul {
+  margin-left: 1.2em;
+
+  li {
+    font-size: 1.2em;
+  }
+}
+
+div[role=content] {
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  p.title {
+    a {
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+}
+
 .thumbnails {
   margin-top: 15px !important;
   margin-bottom: 15px !important;
@@ -50,24 +83,49 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.row {
-  p {
-    font-size: 1.2em;
+.panel {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+
+  ul {
+    margin-bottom: 0;
   }
 }
 
 .panel.callout {
   color: #fff;
+  margin-top: 15px !important;
 
   p {
     font-size: 1.4em;
   }
 }
 
+aside {
+  font-size: 1.1em;
+
+  hr {
+    margin-top: 30px;
+    margin-top: 30px;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .panel {
+    font-size: 0.6em;
+  }
+}
+
 footer {
   a {
     color: #002F60;
-    font-size: 1.2em;
+    font-size: 1em;
 
     &:hover {
       color: #002F60;
