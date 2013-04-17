@@ -33,6 +33,20 @@ C:\muellerps\bundle exec middleman server
 
 and open the browser at [http://localhost:4567/](http://localhost:4567/). You can watch your site while editing.
 
+## Build & Deploy
+
+To generate and deploy the static site use the following commands:
+
+```
+C:\muellerps\bundle exec middleman build
+```
+
+If all is fine, deploy the site with:
+
+```
+C:\muellerps\MUELLERPS_PWD='password' bundle exec middleman deploy
+```
+
 ## License
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/.
