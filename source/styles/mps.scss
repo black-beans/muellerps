@@ -29,7 +29,7 @@ img.logo {
   }
 
   .top-bar-section li a {
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: normal;
     background: #002F60;
     padding: 0 10px;
@@ -85,6 +85,12 @@ div[role=content] {
 
   h6 {
     font-size: 1.2em;
+  }
+}
+
+.employees {
+  img {
+    @include thumb;
   }
 }
 
