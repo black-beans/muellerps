@@ -1,9 +1,52 @@
+$em-base: 18px;
+$body-font-family: "futura-pt", sans-serif;
+
 @import "foundation";
 
 body, html {
   height: 100%;
 }
 
+img.logo {
+  margin-top: 15px;
+}
+
+.top-bar {
+  border-radius: 3px;
+  margin-top: 15px;
+  background: #002F60;
+
+  padding-right: 10px;
+
+  .name h1 {
+    letter-spacing: 2px;
+    font-style: italic;
+  }
+
+  .top-bar-section li a {
+    font-size: 0.9em;
+    font-weight: normal;
+    background: #002F60;
+    padding: 0 10px;
+  }
+}
+
 #featured {
   height: 400px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Times New Roman", Georgia, Serif;
+  color: #002F60;
+}
+
+footer {
+  a {
+    color: #002F60;
+
+    &:hover {
+      color: #002F60;
+      text-decoration: underline;
+    }
+  }
 }
