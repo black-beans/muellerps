@@ -1,4 +1,5 @@
-$em-base: 18px;
+$primary-color: #002F60 !default;
+$secondary-color: #A0A5A9 !default;
 $body-font-family: "futura-pt", sans-serif;
 
 @import "foundation";
@@ -24,7 +25,7 @@ img.logo {
   }
 
   .top-bar-section li a {
-    font-size: 0.9em;
+    font-size: 1.1em;
     font-weight: normal;
     background: #002F60;
     padding: 0 10px;
@@ -40,9 +41,33 @@ h1, h2, h3, h4, h5, h6 {
   color: #002F60;
 }
 
+.thumbnails {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+
+  h6 {
+    font-size: 1.2em;
+  }
+}
+
+.row {
+  p {
+    font-size: 1.2em;
+  }
+}
+
+.panel.callout {
+  color: #fff;
+
+  p {
+    font-size: 1.4em;
+  }
+}
+
 footer {
   a {
     color: #002F60;
+    font-size: 1.2em;
 
     &:hover {
       color: #002F60;
