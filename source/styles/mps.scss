@@ -53,6 +53,11 @@ ul {
   }
 }
 
+address {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 div[role=content] {
   a {
     text-decoration: underline;
@@ -98,6 +103,13 @@ div[role=content] {
 
   p {
     font-size: 1.4em;
+  }
+}
+
+.section-container section.active .title {
+  background-color: #002F60;
+  a {
+    color: #fff;
   }
 }
 

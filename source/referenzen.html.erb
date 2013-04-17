@@ -132,7 +132,7 @@ references:
   <% current_page.data.references.each do |reference| %>
 
       <section>
-        <h2 class="title" data-section-title><%= reference.name %></h2>
+        <p class="title" data-section-title><a href='#<%= reference.name.downcase.gsub(' ', '-').gsub(/[^a-z-]/, '').gsub('--', '-') %>'><%= reference.name %></a></p>
         <div class="content" data-section-content>
           <div class="row">
             <div class="large-3 small-3 columns">

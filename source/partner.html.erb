@@ -31,7 +31,7 @@ partners:
   <% current_page.data.partners.each do |partner| %>
 
       <section>
-        <h2 class="title" data-section-title><%= partner.name %></h2>
+        <p class="title" data-section-title><a href='#<%= partner.name.downcase.gsub(' ', '-').gsub(/[^a-z-]/, '').gsub('--', '-') %>'><%= partner.name %></a></p>
         <div class="content" data-section-content>
           <div class="row">
             <div class="large-3 small-3 columns">
