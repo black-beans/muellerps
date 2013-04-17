@@ -37,6 +37,7 @@ require 'sprockets'
 
 page 'robots.txt', layout: false
 page 'humans.txt', layout: false
+page 'sitemap.xml', layout: false
 
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do

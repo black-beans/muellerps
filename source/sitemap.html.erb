@@ -1,0 +1,16 @@
+---
+layout: 'default'
+title: 'Sitemap'
+description: 'Eine kurze Zusammenfassung aller Bereiche der Online-Präsenz von MPS Müller Projects & Services GmbH ist hier hinterlegt.'
+---
+
+<h1>Sitemap</h1>
+
+<p>Eine kurze Zusammenfassung aller Bereiche der Online-Präsenz:</p>
+
+<% sitemap.resources.each do |page| %>
+    <% if page.url =~ /\.html/ && page.metadata[:page]['title'] %>
+        <h4><a href="<%= "#{ data.sitemap.url }#{ page.url }" %>"><%= "#{ page.metadata[:page]['title'] }" %></a></h4>
+        <p><%= "#{ page.metadata[:page]['description'] }" %></p>
+    <% end %>
+<% end %>

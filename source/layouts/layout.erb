@@ -6,8 +6,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title><%= data.page.title || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept - MPS' %></title>
-  <meta name="description" content="">
+  <title><%= data.page.title ? data.page.title + ' - Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept - MPS' : 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept - MPS' %></title>
+  <meta name="description" content="<%= data.page.description %>">
   <meta name="viewport" content="width=device-width">
 
   <%= favicon_tag 'icons/favicon.ico' %>
@@ -72,16 +72,17 @@
   <div class="large-12 columns">
     <hr>
     <div class="row">
-      <div class="large-6 columns">
+      <div class="large-5 columns">
         <p>&copy; MPS Müller Projects &amp; Services GmbH.</p>
       </div>
-      <div class="large-6 columns">
+      <div class="large-7 columns">
         <ul class="inline-list right">
           <li><%= link_to 'Referenzen', '/referenzen.html' %></li>
           <li><%= link_to 'Partner', '/partner.html' %></li>
           <li><%= link_to 'Downloads', '/downloads.html' %></li>
           <li><%= link_to 'Kontakt', '/kontakt.html' %></li>
           <li><%= link_to 'Impressum', '/impressum.html' %></li>
+          <li><%= link_to 'Sitemap', '/sitemap.html' %></li>
         </ul>
       </div>
     </div>

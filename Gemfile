@@ -7,3 +7,5 @@ gem 'middleman-smusher'
 gem 'middleman-deploy'
 
 gem 'zurb-foundation'
+
+gem 'builder'
