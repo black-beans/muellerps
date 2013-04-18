@@ -36,6 +36,6 @@ function onFormSubmit(e) {
     "\nE-Mail: " + email +
     "\n\nIhre Anmerkung:\n" + comment;
 
-  MailApp.sendEmail(email, "Ihre Kursanmeldung: " + course, "Gerne Bestätigen wir Ihnen folgende Kursanmeldung:\n\n" + data + "\n\n\nFreundliche Grüsse\n\nMPS Team\n\nMPS Müller Projects & Services GmbH\nNotfallmanagement, Arbeitssicherheit, Brandschutz & Schulungen seit 2002\n\nBrühlweg 1, Postfach 510, CH-8049 Zürich\n\nTelefon: +41 (0)44 302 32 76\nFax: +41 (0)44 302 32 77\n\nE-Mail: mps@muellerps.ch\n\nInternet: www.muellerps.ch", { name: 'MPS Müller Projects & Services GmbH', replyTo: 'mps@muellerps.ch', from: 'mps@muellerps.ch' });
-  MailApp.sendEmail("mps@muellerps.ch", "Neue Kursanmeldung: " + course, data, { name: 'MPS Müller Projects & Services GmbH', replyTo: 'mps@muellerps.ch', from: 'mps@muellerps.ch' });
+  GmailApp.sendEmail(email, "Ihre Kursanmeldung: " + course, "Gerne Bestätigen wir Ihnen folgende Kursanmeldung:\n\n" + data + "\n\n\nFreundliche Grüsse\n\nMPS Team\n\nMPS Müller Projects & Services GmbH\nNotfallmanagement, Arbeitssicherheit, Brandschutz & Schulungen seit 2002\n\nBrühlweg 1, Postfach 510, CH-8049 Zürich\n\nTelefon: +41 (0)44 302 32 76\nFax: +41 (0)44 302 32 77\n\nE-Mail: mps@muellerps.ch\n\nInternet: www.muellerps.ch", { name: 'MPS Müller Projects & Services GmbH', replyTo: 'mps@muellerps.ch', from: 'mps@muellerps.ch' });
+  GmailApp.sendEmail("mps@muellerps.ch", "Neue Kursanmeldung: " + course, data, { name: 'MPS Müller Projects & Services GmbH', replyTo: 'mps@muellerps.ch', from: 'mps@muellerps.ch' });
 }
