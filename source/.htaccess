@@ -575,8 +575,6 @@ FileETag None
 
     Redirect permanent /impressum.html                 /impressum
 
-    Redirect permanent /index.html                     /
-
     Redirect permanent /kontakt/kontakt.html           /kontakt
     Redirect permanent /kontakt/kontakt1.html          /kontakt
     Redirect permanent /kontakt/redirect.html          /kontakt
