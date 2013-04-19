@@ -1,6 +1,4 @@
-//= require vendor/custom.modernizr
-//= require vendor/jquery
-//= require foundation
+$('#featured').randomize('img');
 
 $(document).foundation();
 

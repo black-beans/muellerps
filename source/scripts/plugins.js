@@ -1,3 +1,7 @@
+//= require vendor/custom.modernizr
+//= require vendor/jquery
+//= require foundation
+
 // Avoid `console` errors in browsers that lack a console.
 if (!(window.console && console.log)) {
     (function() {
@@ -12,3 +16,21 @@ if (!(window.console && console.log)) {
 }
 
 // Place any jQuery/helper plugins in here.
+(function($) {
+
+  $.fn.randomize = function(childElem) {
+    return this.each(function() {
+      var $this = $(this);
+      var elems = $this.children(childElem);
+
+      elems.sort(function() { return (Math.round(Math.random())-0.5); });
+
+      $this.remove(childElem);
+
+      for(var i=0; i < elems.length; i++)
+        $this.append(elems[i]);
+
+    });
+  }
+
+})($);
