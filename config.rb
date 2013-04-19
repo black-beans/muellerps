@@ -1,5 +1,3 @@
-require 'middleman-smusher'
-
 require 'zurb-foundation'
 require 'sprockets'
 
@@ -84,7 +82,7 @@ configure :build do
   # activate :relative_assets
 
   # Compress PNGs after build
-  activate :smusher
+  # activate :smusher
 
   # Build with nice urls
   activate :directory_indexes
