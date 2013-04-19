@@ -547,78 +547,76 @@ FileETag None
 # | Redirect old pages to new ones                                             |
 # ------------------------------------------------------------------------------
 
-<IfModule mod_alias.c>
-    Redirect permanent /aktuelles.html                 /
+Redirect permanent /aktuelles.html                 /
 
-    Redirect permanent /arbeitssicherheit.html         /arbeitssicherheit
-    Redirect permanent /arbeitssicherheit1.html        /arbeitssicherheit
-    Redirect permanent /arbeitssicherheit2.html        /arbeitssicherheit
-    Redirect permanent /arbeitssicherheit3.html        /arbeitssicherheit
-    Redirect permanent /arbeitssicherheit4.html        /arbeitssicherheit
+Redirect permanent /arbeitssicherheit.html         /arbeitssicherheit
+Redirect permanent /arbeitssicherheit1.html        /arbeitssicherheit
+Redirect permanent /arbeitssicherheit2.html        /arbeitssicherheit
+Redirect permanent /arbeitssicherheit3.html        /arbeitssicherheit
+Redirect permanent /arbeitssicherheit4.html        /arbeitssicherheit
 
-    Redirect permanent /brandschutz.html               /brandschutz
-    Redirect permanent /brandschutz1.html              /brandschutz
-    Redirect permanent /brandschutz2.html              /brandschutz
-    Redirect permanent /brandschutz3.html              /brandschutz
+Redirect permanent /brandschutz.html               /brandschutz
+Redirect permanent /brandschutz1.html              /brandschutz
+Redirect permanent /brandschutz2.html              /brandschutz
+Redirect permanent /brandschutz3.html              /brandschutz
 
-    Redirect permanent /downloads.html                 /downloads
-    Redirect permanent /downloads/artikel1.html        /downloads
-    Redirect permanent /downloads/artikel10.html       /downloads
-    Redirect permanent /downloads/artikel2.html        /downloads
-    Redirect permanent /downloads/artikel3.html        /downloads
-    Redirect permanent /downloads/artikel4.html        /downloads
-    Redirect permanent /downloads/artikel5.html        /downloads
-    Redirect permanent /downloads/artikel6.html        /downloads
-    Redirect permanent /downloads/artikel7.html        /downloads
-    Redirect permanent /downloads/artikel8.html        /downloads
-    Redirect permanent /downloads/galerie/index.html   /downloads
+Redirect permanent /downloads.html                 /downloads
+Redirect permanent /downloads/artikel1.html        /downloads
+Redirect permanent /downloads/artikel10.html       /downloads
+Redirect permanent /downloads/artikel2.html        /downloads
+Redirect permanent /downloads/artikel3.html        /downloads
+Redirect permanent /downloads/artikel4.html        /downloads
+Redirect permanent /downloads/artikel5.html        /downloads
+Redirect permanent /downloads/artikel6.html        /downloads
+Redirect permanent /downloads/artikel7.html        /downloads
+Redirect permanent /downloads/artikel8.html        /downloads
+Redirect permanent /downloads/galerie/index.html   /downloads
 
-    Redirect permanent /impressum.html                 /impressum
+Redirect permanent /impressum.html                 /impressum
 
-    Redirect permanent /kontakt/kontakt.html           /kontakt
-    Redirect permanent /kontakt/kontakt1.html          /kontakt
-    Redirect permanent /kontakt/redirect.html          /kontakt
-    Redirect permanent /kontakt.html                   /kontakt
+Redirect permanent /kontakt/kontakt.html           /kontakt
+Redirect permanent /kontakt/kontakt1.html          /kontakt
+Redirect permanent /kontakt/redirect.html          /kontakt
+Redirect permanent /kontakt.html                   /kontakt
 
-    Redirect permanent /kurse.html                     /kurse
-    Redirect permanent /kurse/kurs1buchung.html        /kurse
-    Redirect permanent /kurse/kurs1info.html           /kurse
-    Redirect permanent /kurse/kurs2buchung.html        /kurse
-    Redirect permanent /kurse/kurs2info.html           /kurse
-    Redirect permanent /kurse/kurs3buchung.html        /kurse
-    Redirect permanent /kurse/kurs3info.html           /kurse
-    Redirect permanent /kurse/kurs4buchung.html        /kurse
-    Redirect permanent /kurse/kurs4info.html           /kurse
-    Redirect permanent /kurse/kursbuchung.html         /kurse
-    Redirect permanent /kurse/kurseagb.html            /kurse/agb
+Redirect permanent /kurse.html                     /kurse
+Redirect permanent /kurse/kurs1buchung.html        /kurse
+Redirect permanent /kurse/kurs1info.html           /kurse
+Redirect permanent /kurse/kurs2buchung.html        /kurse
+Redirect permanent /kurse/kurs2info.html           /kurse
+Redirect permanent /kurse/kurs3buchung.html        /kurse
+Redirect permanent /kurse/kurs3info.html           /kurse
+Redirect permanent /kurse/kurs4buchung.html        /kurse
+Redirect permanent /kurse/kurs4info.html           /kurse
+Redirect permanent /kurse/kursbuchung.html         /kurse
+Redirect permanent /kurse/kurseagb.html            /kurse/agb
 
-    Redirect permanent /mpsfakten.html                 /ueber-uns
+Redirect permanent /mpsfakten.html                 /ueber-uns
 
-    Redirect permanent /mpspartner.html                /partner
+Redirect permanent /mpspartner.html                /partner
 
-    Redirect permanent /notfallmanagement.html         /notfallmanagement
-    Redirect permanent /notfallmanagement1.html        /notfallmanagement
+Redirect permanent /notfallmanagement.html         /notfallmanagement
+Redirect permanent /notfallmanagement1.html        /notfallmanagement
 
-    Redirect permanent /referenzen.html                /referenzen
+Redirect permanent /referenzen.html                /referenzen
 
-    Redirect permanent /schulungen.html                /schulungen
-    Redirect permanent /schulungen1.html               /schulungen
-    Redirect permanent /schulungen2.html               /schulungen
-    Redirect permanent /schulungen3.html               /schulungen
-    Redirect permanent /schulungen4.html               /schulungen
-    Redirect permanent /schulungen5.html               /schulungen
-    Redirect permanent /schulungen6.html               /schulungen
+Redirect permanent /schulungen.html                /schulungen
+Redirect permanent /schulungen1.html               /schulungen
+Redirect permanent /schulungen2.html               /schulungen
+Redirect permanent /schulungen3.html               /schulungen
+Redirect permanent /schulungen4.html               /schulungen
+Redirect permanent /schulungen5.html               /schulungen
+Redirect permanent /schulungen6.html               /schulungen
 
-    Redirect permanent /sitemap/errorbuch1.html        /sitemap
-    Redirect permanent /sitemap/errorbuch2.html        /sitemap
-    Redirect permanent /sitemap/errorbuch3.html        /sitemap
-    Redirect permanent /sitemap/errorbuch4.html        /sitemap
-    Redirect permanent /sitemap/errorcont.html         /sitemap
-    Redirect permanent /sitemap/errorinf1.html         /sitemap
-    Redirect permanent /sitemap/errorinf2.html         /sitemap
-    Redirect permanent /sitemap/errorinf3.html         /sitemap
-    Redirect permanent /sitemap/errorinf4.html         /sitemap
-    Redirect permanent /sitemap/thanks.html            /sitemap
-    Redirect permanent /sitemap.html                   /sitemap
-    Redirect permanent /smp.xml                        /sitemap.xml
-</IfModule>
+Redirect permanent /sitemap/errorbuch1.html        /sitemap
+Redirect permanent /sitemap/errorbuch2.html        /sitemap
+Redirect permanent /sitemap/errorbuch3.html        /sitemap
+Redirect permanent /sitemap/errorbuch4.html        /sitemap
+Redirect permanent /sitemap/errorcont.html         /sitemap
+Redirect permanent /sitemap/errorinf1.html         /sitemap
+Redirect permanent /sitemap/errorinf2.html         /sitemap
+Redirect permanent /sitemap/errorinf3.html         /sitemap
+Redirect permanent /sitemap/errorinf4.html         /sitemap
+Redirect permanent /sitemap/thanks.html            /sitemap
+Redirect permanent /sitemap.html                   /sitemap
+Redirect permanent /smp.xml                        /sitemap.xml
