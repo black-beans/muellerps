@@ -64,7 +64,7 @@ set :js_dir, 'scripts'
 
 set :images_dir, 'images'
 
-set :relative_links, true
+# set :relative_links, true
 
 # Build-specific configuration
 #
@@ -81,15 +81,15 @@ configure :build do
   activate :cache_buster
 
   # Use relative URLs
-  activate :relative_assets # TODO: Disable when launch
+  # activate :relative_assets
 
   # Compress PNGs after build
-  # TODO: Enable when launch: activate :smusher
+  activate :smusher
 
   # Build with nice urls
   activate :directory_indexes
 
-  # Comprt
+  # Compress
   activate :gzip
 end
 
@@ -100,5 +100,5 @@ activate :deploy do |deploy|
   deploy.user     = 'web229'
   deploy.password = ENV['MUELLERPS_PWD']
   deploy.host     = 'www.muellerps.ch'
-  deploy.path     = '/html/redesign'
+  deploy.path     = '/html'
 end
