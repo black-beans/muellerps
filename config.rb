@@ -90,13 +90,3 @@ configure :build do
   # Compress
   activate :gzip
 end
-
-# Deployment configuration
-#
-activate :deploy do |deploy|
-  deploy.method   = :ftp
-  deploy.user     = 'web229'
-  deploy.password = ENV['MUELLERPS_PWD']
-  deploy.host     = 'www.muellerps.ch'
-  deploy.path     = '/html'
-end

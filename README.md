@@ -20,7 +20,7 @@ cloned, select `open in command prompt` when pressing on the gear-wheel. In the 
 dependencies:
 
 ```
-C:\muellerps\npm install
+$ npm install
 ```
 
 ## Editing
@@ -28,23 +28,25 @@ C:\muellerps\npm install
 Before editing, start DocPad in the command prompt:
 
 ```
-C:\muellerps\bundle exec middleman server
+$ bundle exec middleman server
 ```
 
 and open the browser at [http://localhost:4567/](http://localhost:4567/). You can watch your site while editing.
 
 ## Build & Deploy
 
+To deploy the site `ncftp` needs to be installed:
+
+```
+$ brew install ncftp
+```
+
 To generate and deploy the static site use the following commands:
 
 ```
-C:\muellerps\bundle exec middleman build
-```
-
-If all is fine, deploy the site with:
-
-```
-C:\muellerps\MUELLERPS_PWD='password' bundle exec middleman deploy
+$ bundle exec middleman build
+$ cd build
+$ ncftpput -u web229 -R www.muellerps.ch html .
 ```
 
 ## License
