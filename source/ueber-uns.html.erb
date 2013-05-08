@@ -10,9 +10,18 @@ description: 'Als Spezialisten geben wir Ihnen hier gerne einen Einblick in unse
   Wir sind ein Unternehmen, das sich seit 2002 auf Notfallmanagement, Arbeitssicherheit, Brandschutz und Schulungen
   spezialisiert hat.
 </p>
+
 <p>
-  <%= image_tag('phasenmodell.jpg') %>
+  <a href="#" data-reveal-id="modalImage"><%= image_tag('phasen/MPS-integrierte-sicherheit.jpg') %></a>
 </p>
+
+<% content_for :footer do %>
+  <div id="modalImage" class="reveal-modal large">
+      <h2>MPS integrierte Sicherheit</h2>
+      <a class="close-reveal-modal">&#215;</a>
+      <%= image_tag('phasen/MPS-integrierte-sicherheit.jpg') %>
+  </div>
+<% end %>
 
 <p>Unsere Hauptgebiete im Bereich Notfallmanagement, Arbeitssicherheit und Brandschutz sind:</p>
 

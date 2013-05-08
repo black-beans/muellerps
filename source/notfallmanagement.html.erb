@@ -33,6 +33,12 @@ description: 'Arbeitssicherheit, Brandschutz & Schulungen vernetzt mit Ihrem Not
   Gerne unterstützen wir Sie, damit Sie für den Fall der Fälle vorbereitet sind.
 </p>
 
+<h2>Evakuationskonzept</h2>
+
+<p>
+  <a href="#" data-reveal-id="modalImage2"><%= image_tag('phasen/evakuation-vorgehen.jpg') %></a>
+</p>
+
 <h2>Ihre Vorteile</h2>
 
 <ul>
@@ -59,6 +65,21 @@ description: 'Arbeitssicherheit, Brandschutz & Schulungen vernetzt mit Ihrem Not
   <li>Erste Hilfe Ausbildung</li>
   <li>Löscheinrichtungen und Ausbildung</li>
 </ul>
+
 <p>
-  <%= image_tag('fluchtplan.jpg') %>
+  <a href="#" data-reveal-id="modalImage1"><%= image_tag('fluchtplan.jpg') %></a>
 </p>
+
+<% content_for :footer do %>
+    <div id="modalImage1" class="reveal-modal large">
+      <h2>Fluchtplan</h2>
+      <a class="close-reveal-modal">&#215;</a>
+      <%= image_tag('fluchtplan.jpg') %>
+    </div>
+
+    <div id="modalImage2" class="reveal-modal large">
+      <h2>Evakuationskonzept</h2>
+      <a class="close-reveal-modal">&#215;</a>
+      <%= image_tag('phasen/evakuation-vorgehen.jpg') %>
+    </div>
+<% end %>

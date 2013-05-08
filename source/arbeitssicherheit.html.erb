@@ -33,6 +33,12 @@ classes:
   </div>
 </div>
 
+<h2>Sicherheit mit System</h2>
+
+<p>
+  <a href="#" data-reveal-id="modalImage"><%= image_tag('phasen/arbeitssicherheit-vorgehen.jpg') %></a>
+</p>
+
 <h2>Ihre Vorteile</h2>
 
 <ul>
@@ -74,3 +80,11 @@ classes:
       </section>
   <% end %>
 </div>
+
+<% content_for :footer do %>
+    <div id="modalImage" class="reveal-modal large">
+      <h2>Sicherheit mit System</h2>
+      <a class="close-reveal-modal">&#215;</a>
+      <%= image_tag('phasen/arbeitssicherheit-vorgehen.jpg') %>
+    </div>
+<% end %>
