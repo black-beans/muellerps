@@ -12,14 +12,14 @@ description: 'Als Spezialisten geben wir Ihnen hier gerne einen Einblick in unse
 </p>
 
 <p>
-  <a href="#" data-reveal-id="modalImage"><%= image_tag('phasen/MPS-integrierte-sicherheit.jpg') %></a>
+  <a href="#" data-reveal-id="modalImage"><%= image_tag('phasen/MPS-integrierte-sicherheit.jpg', alt: 'Integrierte Sicherheit') %></a>
 </p>
 
 <% content_for :footer do %>
   <div id="modalImage" class="reveal-modal large">
       <h2>MPS integrierte Sicherheit</h2>
       <a class="close-reveal-modal">&#215;</a>
-      <%= image_tag('phasen/MPS-integrierte-sicherheit.jpg') %>
+      <%= image_tag('phasen/MPS-integrierte-sicherheit.jpg', alt: 'Integrierte Sicherheit') %>
   </div>
 <% end %>
 
@@ -133,7 +133,7 @@ description: 'Als Spezialisten geben wir Ihnen hier gerne einen Einblick in unse
 
     <div class="content" data-section-content>
       <p class="right">
-        <%= image_tag('mitarbeiter/rm.jpg') %>
+        <%= image_tag('mitarbeiter/rm.jpg', alt: 'Geschäftsführer') %>
       </p>
 
       <h4>Ausbildungen</h4>
@@ -179,7 +179,7 @@ description: 'Als Spezialisten geben wir Ihnen hier gerne einen Einblick in unse
 
     <div class="content" data-section-content>
       <p class="right">
-        <%= image_tag('mitarbeiter/am.jpg') %>
+        <%= image_tag('mitarbeiter/am.jpg', alt: 'Administration') %>
       </p>
 
       <h4>Ausbildungen</h4>

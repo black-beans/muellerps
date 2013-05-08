@@ -14,7 +14,7 @@ description: 'Arbeitssicherheit, Brandschutz & Schulungen vernetzt mit Ihrem Not
 </p>
 <div class="row panel">
   <div class="large-3 columns">
-    <%= image_tag('symbole/notfallmanagement.png') %>
+    <%= image_tag('symbole/notfallmanagement.png', alt: 'Notfallmanagement') %>
   </div>
   <div class="large-9 columns">
     <ul>
@@ -36,7 +36,7 @@ description: 'Arbeitssicherheit, Brandschutz & Schulungen vernetzt mit Ihrem Not
 <h2>Evakuationskonzept</h2>
 
 <p>
-  <a href="#" data-reveal-id="modalImage2"><%= image_tag('phasen/evakuation-vorgehen.jpg') %></a>
+  <a href="#" data-reveal-id="modalImage2"><%= image_tag('phasen/evakuation-vorgehen.jpg', alt: 'Vorgehen Evakuation') %></a>
 </p>
 
 <h2>Ihre Vorteile</h2>
@@ -67,19 +67,19 @@ description: 'Arbeitssicherheit, Brandschutz & Schulungen vernetzt mit Ihrem Not
 </ul>
 
 <p>
-  <a href="#" data-reveal-id="modalImage1"><%= image_tag('fluchtplan.jpg') %></a>
+  <a href="#" data-reveal-id="modalImage1"><%= image_tag('fluchtplan.jpg', alt: 'Beispiel Fluchtplan') %></a>
 </p>
 
 <% content_for :footer do %>
     <div id="modalImage1" class="reveal-modal large">
       <h2>Fluchtplan</h2>
       <a class="close-reveal-modal">&#215;</a>
-      <%= image_tag('fluchtplan.jpg') %>
+      <%= image_tag('fluchtplan.jpg', alt: 'Beispiel Fluchtplan') %>
     </div>
 
     <div id="modalImage2" class="reveal-modal large">
       <h2>Evakuationskonzept</h2>
       <a class="close-reveal-modal">&#215;</a>
-      <%= image_tag('phasen/evakuation-vorgehen.jpg') %>
+      <%= image_tag('phasen/evakuation-vorgehen.jpg', alt: 'Vorgehen Evakuation') %>
     </div>
 <% end %>
