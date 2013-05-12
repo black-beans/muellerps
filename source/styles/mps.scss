@@ -53,11 +53,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #002F60;
 }
 
-ul {
-  margin-left: 1.2em;
+ul, ol {
+  margin-left: 1.5em;
 
   li {
     font-size: 1.2em;
+
+    li {
+      font-size: 0.9em;
+    }
+
+    ol {
+      list-style-type: lower-alpha;
+
+      ol {
+        list-style-type: decimal;
+      }
+    }
   }
 }
 
