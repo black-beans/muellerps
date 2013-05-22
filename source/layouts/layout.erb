@@ -6,13 +6,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title><%= data.page.title ? data.page.title + ' - Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept - MPS' : 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept - MPS' %></title>
-  <meta name="description" content="<%= data.page.description || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept' %>">
-
-  <meta name="keywords" content="Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept, Evakuation, Evakuationsplanung, Evakuationskonzept, SIBE, Sicherheitsbeauftragter">
-  <meta name="abstract" content="Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept">
+  <title><%= (data.page.globotitle || (data.page.title ? data.page.title + ' - ' : "") + 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept') + ' - MPS' %></title>
+  <meta name="description" content="<%= data.page.globotitle || data.page.description || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept' %>">
+  <meta name="keywords" content="<%= data.page.globotitle || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept, Evakuation, Evakuationsplanung, Evakuationskonzept, SIBE, Sicherheitsbeauftragter' %>">
+  <meta name="abstract" content="<%= data.page.globotitle || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept' %>">
   <meta name="author" content="MPS Müller Projects u. Services GmbH 8049 Zürich">
-  <meta name="page-topic" content="Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept">
+  <meta name="page-topic" content="<%= data.page.globotitle || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept' %>">
+  <meta name="dc.title" content="<%= (data.page.globotitle || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept') + ' - MPS' %>">
+  <meta name="dc.description" content="<%= (data.page.globotitle || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept') + ' - MPS' %>">
   <meta name="robots" content="index, follow">
   <meta name="gloreftag" content="itJt7UcYMpzD+2wZQUQVoA==" />
 
@@ -31,6 +32,28 @@
 
   <script type="text/javascript" src="//use.typekit.net/tod0ava.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!-- GLOBONET Tracking Code -->
+  <script type="text/javascript">
+  var _paq = _paq || [];
+  (function(){
+	      var u=(("https:" == document.location.protocol) ? "https://tracking.globonet.ch/" : "http://tracking.globonet.ch/");
+	      _paq.push(['setSiteId', '570']);
+	      _paq.push(['setTrackerUrl', u+'piwik.php']);
+	      _paq.push(['setVisitorCookieTimeout', '604800']);
+	      _paq.push(['setSessionCookieTimeout', '0']);
+	      _paq.push(['trackPageView']);
+	      _paq.push(['enableLinkTracking']);
+	      var d=document,
+	      g=d.createElement('script'),
+	      s=d.getElementsByTagName('script')[0];
+	      g.type='text/javascript';
+	      g.defer=true;
+	      g.async=true;
+	      g.src=u+'piwik.js';
+	      s.parentNode.insertBefore(g,s);
+	  })();
+  </script>
+  <!-- End GLOBONET Tracking Code -->
 </head>
 <body>
 
