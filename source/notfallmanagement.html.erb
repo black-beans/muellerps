@@ -37,7 +37,7 @@ globotitle: 'Notfallmanagement, Notfallorganisation, Notfallplanung, Evakuierung
 <h2>Evakuationskonzept</h2>
 
 <p>
-  <a href="#" data-reveal-id="modalImage2"><%= image_tag('phasen/evakuation-vorgehen.jpg', alt: 'Vorgehen Evakuation') %></a>
+  <a href="#" data-reveal-id="modalImage1"><%= image_tag('phasen/evakuation-vorgehen.jpg', alt: 'Vorgehen Evakuation') %></a>
 </p>
 
 <h2>Ihre Vorteile</h2>
@@ -67,24 +67,37 @@ globotitle: 'Notfallmanagement, Notfallorganisation, Notfallplanung, Evakuierung
   <li>Löscheinrichtungen und Ausbildung</li>
 </ul>
 
-<p>
-  <a href="#" data-reveal-id="modalImage1"><%= image_tag('fluchtplan.jpg', alt: 'Beispiel Fluchtplan') %></a>
-</p>
+<div class="row">
+  <div class="large-6 columns">
+    <a href="#" data-reveal-id="modalImage2"><%= image_tag('feuerwehreinsatzplan.jpg', alt: 'Beispiel Feuerwehreinsatzplan') %></a>
+  </div>
+  <div class="large-6 columns">
+    <a href="#" data-reveal-id="modalImage3"><%= image_tag('flucht-und-rettungsplan.jpg', alt: 'Beispiel Flucht- und Rettungsplan') %></a>
+  </div>
+</div>
 
-<p>
+<div class="row panel">
+  <div class="large-12 columns">
   Kennen Sie die <%= link_to 'gesetzlichen Auflagen', '/gesetzliche-auflagen.html' %>?
-</p>
+  </div>
+</div>
 
 <% content_for :footer do %>
     <div id="modalImage1" class="reveal-modal large">
-      <h2>Fluchtplan</h2>
+      <h2>Evakuationskonzept MPS</h2>
       <a class="close-reveal-modal">&#215;</a>
-      <%= image_tag('fluchtplan.jpg', alt: 'Beispiel Fluchtplan') %>
+      <%= image_tag('phasen/evakuation-vorgehen.jpg', alt: 'Vorgehen Evakuation') %>
     </div>
 
     <div id="modalImage2" class="reveal-modal large">
-      <h2>Evakuationskonzept</h2>
+      <h2>Feuerwehreinsatzplan MPS</h2>
       <a class="close-reveal-modal">&#215;</a>
-      <%= image_tag('phasen/evakuation-vorgehen.jpg', alt: 'Vorgehen Evakuation') %>
+      <%= image_tag('feuerwehreinsatzplan.jpg', alt: 'Beispiel Feuerwehreinsatzplan') %>
+    </div>
+
+    <div id="modalImage3" class="reveal-modal large">
+      <h2>Flucht- und Rettungsplan MPS</h2>
+      <a class="close-reveal-modal">&#215;</a>
+      <%= image_tag('flucht-und-rettungsplan.jpg', alt: 'Beispiel Flucht- und Rettungsplan') %>
     </div>
 <% end %>
