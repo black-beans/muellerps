@@ -1,5 +1,17 @@
+body {
+  font-family: sans-serif;
+}
+
+img {
+  boder: 0;
+}
+
 img.logo {
   zoom: 50%;
+}
+
+#mobile-header {
+  margin-top: 40px;
 }
 
 .hide-on-print {
@@ -25,6 +37,6 @@ p.title {
 }
 
 a[data-reveal-id] img {
-  zoom: 50%;
+  max-width: 100%;
 }
 

@@ -1,11 +1,11 @@
 <% wrap_layout :layout do %>
 
-    <div class="row hide-on-print">
+    <div class="row">
       <div class="large-12 columns">
 
         <!-- Desktop Slider -->
 
-        <div class="hide-for-small">
+        <div class="hide-for-small hide-on-print">
           <div id="featured" data-orbit data-options="fluid:2x1;">
             <%= image_tag('slideshow/Arbeitssicherheit-Scheifmaschine.jpg', alt: 'Arbeitssicherheit bei Maschinen') %>
             <%= image_tag('slideshow/Arbeitssicherheit.jpg', class: 'hidden', alt: 'Überprüfung Arbeitssicherheit') %>
@@ -26,7 +26,7 @@
 
         <!-- Mobile Header -->
 
-        <div class="show-for-small">
+        <div id="mobile-header" class="show-for-small">
             <%= image_tag('slideshow/mobile/evakuation.jpg') %>
         </div>
 
