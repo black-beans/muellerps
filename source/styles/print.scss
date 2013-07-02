@@ -1,0 +1,30 @@
+img.logo {
+  zoom: 50%;
+}
+
+.hide-on-print {
+  display: none !important;
+}
+
+article a {
+  text-decoration: none;
+  color: black;
+}
+
+.reveal-modal {
+  display: none;
+}
+
+.panel img {
+  display: none;
+}
+
+p.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a[data-reveal-id] img {
+  zoom: 50%;
+}
+

@@ -1,6 +1,6 @@
 <% wrap_layout :layout do %>
 
-    <div class="row">
+    <div class="row hide-on-print">
       <div class="large-12 columns">
 
         <!-- Desktop Slider -->
@@ -36,7 +36,7 @@
     </div>
     <br>
 
-    <div class="row">
+    <div class="row hide-on-print">
       <div class="large-12 columns">
         <div class="row thumbnails">
 
@@ -105,7 +105,7 @@
                     und Schulungen spezialisiert hat.
                   </h5>
 
-                  <div class="show-for-small" align="center">
+                  <div class="show-for-small hide-on-print" align="center">
                     <%= link_to 'Offizielle SUVA Kurse', '/kurse.html', class: 'small radius button' %>
                     <%= link_to 'Kontaktieren Sie uns', '/kontakt.html', class: 'small radius button' %>
                   </div>
@@ -115,7 +115,7 @@
             </div>
           </div>
 
-          <div class="large-4 columns hide-for-small">
+          <div class="large-4 columns hide-for-small hide-on-print">
 
             <% link_to '/kurse.html' do %>
                 <div class="panel radius callout" align="center">
@@ -138,7 +138,7 @@
     </div>
 
 
-    <div class="row">
+    <div class="row hide-on-print">
       <div class="large-12 columns">
         <div class="row thumbnails">
 

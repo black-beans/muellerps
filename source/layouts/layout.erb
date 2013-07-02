@@ -29,6 +29,7 @@
   <%= stylesheet_link_tag 'normalize' %>
   <%= stylesheet_link_tag 'boilerplate' %>
   <%= stylesheet_link_tag 'mps' %>
+  <%= stylesheet_link_tag 'print', media: :print %>
 
   <script type="text/javascript" src="//use.typekit.net/tod0ava.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -66,7 +67,7 @@
 
     <!-- Navigation -->
 
-    <nav class="top-bar">
+    <nav class="top-bar hide-on-print">
       <ul class="title-area">
         <!-- Title Area -->
         <li class="name">
@@ -107,7 +108,7 @@
       <div class="large-4 columns">
         <p>&copy; MPS Müller Projects &amp; Services GmbH</p>
       </div>
-      <div class="large-8 columns">
+      <div class="large-8 columns hide-on-print">
         <ul class="inline-list right">
           <li><%= link_to 'Referenzen', '/referenzen.html' %></li>
           <li><%= link_to 'Partner', '/partner.html' %></li>
