@@ -6,14 +6,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title><%= (data.page.globotitle || (data.page.title ? data.page.title + ' - ' : "") + 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept') + ' - MPS' %></title>
-  <meta name="description" content="<%= data.page.description || data.page.globotitle || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept' %>">
-  <meta name="keywords" content="<%= data.page.globotitle || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept, Evakuation, Evakuationsplanung, Evakuationskonzept, SIBE, Sicherheitsbeauftragter' %>">
-  <meta name="abstract" content="<%= data.page.globotitle || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept' %>">
+  <title><%= data.page.title + ' - ' + (data.page.keywords || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept') + ' - MPS' %></title>
+  <meta name="description" content="<%= data.page.description %>">
+  <meta name="keywords" content="<%= (data.page.keywords || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept') %>">
+  <meta name="abstract" content="<%= data.page.sitemap %>">
   <meta name="author" content="MPS Müller Projects u. Services GmbH 8049 Zürich">
-  <meta name="page-topic" content="<%= data.page.globotitle || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept' %>">
-  <meta name="dc.title" content="<%= (data.page.globotitle || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept') + ' - MPS' %>">
-  <meta name="dc.description" content="<%= (data.page.description || data.page.globotitle || 'Arbeitssicherheit, Notfallmanagement, Arbeitssicherheit Schweiz, Evakuierungskonzept') + ' - MPS' %>">
+  <meta name="page-topic" content="<%= data.page.keywords %>">
+  <meta name="dc.title" content="<%= data.page.title + ' - MPS' %>">
+  <meta name="dc.description" content="<%= (data.page.sitemap || data.page.description) %>">
   <meta name="robots" content="index, follow">
   <meta name="gloreftag" content="itJt7UcYMpzD+2wZQUQVoA==" />
 
