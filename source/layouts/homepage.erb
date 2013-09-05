@@ -5,8 +5,9 @@
 
         <!-- Desktop Slider -->
 
-        <div class="hide-for-small hide-on-print">
-          <ul id="featured" data-orbit>
+        <div class="slideshow-wrapper hide-for-small hide-on-print">
+          <div class="preloader"></div>
+          <ul id="featured" data-orbit data-options="pause_on_hover:false; bullets: false;">
             <li>
               <%= image_tag('slideshow/Arbeitssicherheit-Scheifmaschine.jpg', alt: 'Arbeitssicherheit bei Maschinen') %>
             </li>
