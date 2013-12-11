@@ -1,1 +1,2 @@
+$('#featured').randomize();
 $(document).foundation();
