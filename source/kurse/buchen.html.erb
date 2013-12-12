@@ -5,7 +5,7 @@ description: 'Formular um einen MPS Müller Projects & Services GmbH Kurs zu buc
 sitemap: 'Formular um einen MPS Müller Projects & Services GmbH Kurs zu buchen.'
 ---
 <h1>Kursbuchung</h1>
-<p>Mit Hilfe des nachfolgenden Formulars können Sie Ihre Teilnahme an dem ausgeschriebenen Kurs übermitteln. Bitte stellen Sie sicher, dass Sie vorher die <a href="http://www.muellerps.ch/kurse/kurseagb.html">allgemeinen Geschäftsbedingungen des MPS Kurswesens</a> akzeptiert haben.<p>
+<p>Mit Hilfe des nachfolgenden Formulars können Sie Ihre Teilnahme an dem ausgeschriebenen Kurs übermitteln. Bitte stellen Sie sicher, dass Sie vorher die <a href="http://www.muellerps.ch/kurse/kurseagb.html">allgemeinen Geschäftsbedingungen des MPS Kurswesens</a> akzeptiert haben.</p>
 <form action="https://docs.google.com/a/mksoft.ch/forms/d/1cu-6wErOuMUiN6Eb-JSrbZH63G5pCaAUfGQ7Zorg2SY/formResponse?embedded=true" method="POST" target="_self" data-abide>
   <fieldset>
     <legend>Ihr Kurs</legend>
@@ -67,8 +67,8 @@ sitemap: 'Formular um einen MPS Müller Projects & Services GmbH Kurs zu buchen.
           Geburtsdatum
           <span>*</span>
         </label>
-        <input type="date" name="entry.844881684" value="" id="entry_844881684" required>
-        <small class="error">Ihr Geburtsdatum wird benötigt.</small>
+        <input type="text" name="entry.844881684" value="" id="entry_844881684" required pattern="(0?[1-9]|[12][0-9]|3[01])[- \/.](0?[1-9]|1[012])[- \/.](19|20)\d\d">
+        <small class="error">Ihr Geburtsdatum wird benötigt (DD.MM.JJJJ).</small>
       </div>
       <div class="large-6 columns">
         <label for="entry_885702834">
