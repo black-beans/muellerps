@@ -40,3 +40,37 @@ a[data-reveal-id] img {
   max-width: 100%;
 }
 
+form {
+  fieldset {
+    margin-top: 25px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  legend {
+    display: none;
+  }
+
+  label {
+    display: block;
+  }
+
+  input, select {
+    height: 30px;
+  }
+
+  input, textarea, select {
+    width: 80%;
+    margin-bottom: 15px;
+    border: 1px solid #888;
+  }
+
+  small.error {
+    display: none;
+  }
+
+  label[for=group_1690754908_1], button {
+    display: none;
+  }
+}
