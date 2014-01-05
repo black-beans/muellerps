@@ -23,17 +23,34 @@ dependencies:
 $ npm install
 ```
 
-## Editing
+## Prepare
 
-Before editing, start DocPad in the command prompt:
+To install all dependencies, bundle the project:
+
+```Bash
+$ bundle
+
+## Run
+
+Before editing, start middleman in the command prompt:
 
 ```
 $ bundle exec middleman server
 ```
 
-and open the browser at [http://localhost:4567/](http://localhost:4567/). You can watch your site while editing.
+and open the browser at [http://localhost:4567/](http://localhost:4567/).
 
-## Build & Deploy
+## Build
+
+To build the final site:
+
+```Bash
+$ bundle exec middleman build
+```
+
+The site will be generated to the `build` directory.
+
+## Deploy
 
 To deploy the site `ncftp` needs to be installed:
 
@@ -41,14 +58,14 @@ To deploy the site `ncftp` needs to be installed:
 $ brew install ncftp
 ```
 
-To generate and deploy the static site use the following commands:
+To deploy the static site use the following commands:
 
 ```
-$ bundle exec middleman build
 $ cd build
 $ ncftpput -u web229 -R www.muellerps.ch html .
 ```
 
 ## License
 
-This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/.
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/.
