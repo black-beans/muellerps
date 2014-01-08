@@ -1,6 +1,6 @@
 /*
  Google Form Mailer
- Keep an updated copy in the website repository: https://github.com/mksoft/muellerps/form/mailer.js
+ Keep an updated copy in the website repository: https://github.com/flinkfinger/muellerps/form/mailer.js
 */
 
 function onFormSubmit(e) {
