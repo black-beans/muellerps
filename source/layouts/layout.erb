@@ -26,9 +26,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/icons/apple-touch-icon-114x114-precomposed.png"/>
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/icons/apple-touch-icon-144x144-precomposed.png"/>
 
-  <%= stylesheet_link_tag 'normalize' %>
-  <%= stylesheet_link_tag 'boilerplate' %>
-  <%= stylesheet_link_tag 'mps' %>
+  <%= stylesheet_link_tag 'application' %>
   <%= stylesheet_link_tag 'print', media: :print %>
 
   <script type="text/javascript" src="//use.typekit.net/tod0ava.js"></script>
@@ -124,8 +122,7 @@
 
 <%= yield_content :footer %>
 
-<%= javascript_include_tag 'plugins' %>
-<%= javascript_include_tag 'main' %>
+<%= javascript_include_tag 'application' %>
 
 <script>
     var _gaq = [
