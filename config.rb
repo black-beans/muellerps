@@ -64,13 +64,12 @@ set :images_dir, 'images'
 
 # set :relative_links, true
 
+# Enable live reload while working locally
+activate :livereload
+
 # Build-specific configuration
 #
 configure :build do
-
-  # Enable live reload while working locally
-  activate :livereload
-
   # For example, change the Compass output style for deployment
   activate :minify_css
   activate :minify_javascript
